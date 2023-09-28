@@ -112,6 +112,9 @@ namespace romp {
 
 // << ================================= Pretty Format Writer =================================== >> 
 
+
+//MO: we can implement a to_json and a pretty printer for the 2D matrix we construct from the QLWalker by extending some structs and/or overriding some methods here.
+
   class ostream_p {
   public:
     std::ostream& out;

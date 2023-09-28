@@ -47,6 +47,10 @@ namespace romp {
     }
 constexpr size_t _ROMP_ATTEMPT_LIMIT_DEFAULT();
 #define _ROMP_START_ID_DEFAULT ((unsigned)(~(0u)))
+//MO: we need to extend this by either inheriting it from another struct
+//(OptionMoGanesh) or by editing the parse_args method/function to parse a new
+//option for our algorithm. Also, main.hpp needs to take into account our
+//algorithm so that it launches it with the appropriate set of CLI arguments
 struct Options {
   // size_t history_length = 4;
   bool do_trace = false;

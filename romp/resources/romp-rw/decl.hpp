@@ -234,7 +234,7 @@ namespace romp {
    * @brief Abstract parent of The Random Walker that the model will hold a reference to 
    *        in order to bea ble to call it for various handlers
    */
-  struct IRandWalker {
+  struct IRandWalker { //MO: this one is to be extended and implemented by our Q-Learning algorithm, lets call it QLWalker
     /**
      * @brief the handler the model will call when it reaches an inline `assert`/`invariant` statement
      * @param eval_expr the expression to be evaluated (technically it will be evaluated before reaching this)
@@ -293,7 +293,7 @@ namespace romp {
     virtual void put_handler(const std::function<void(ostream_p&)>& put_action, const location& loc) = 0;
   };
 
-  struct Result {
+  struct Result { //MO: we can extend this struct to add the 2D matrix for "how many times picking a rule lead to firing a certain action"
     enum Cause {
         NO_CAUSE=0,
         RUNNING=0,

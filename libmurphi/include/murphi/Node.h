@@ -4,6 +4,7 @@
 #include <climits>
 #include <cstddef>
 #include <iostream>
+#include <cstdint>
 
 #ifndef MURPHI_API_WITH_RTTI
 #define MURPHI_API_WITH_RTTI __attribute__((visibility("default")))

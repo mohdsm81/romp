@@ -34,6 +34,11 @@ namespace std {
 
 namespace romp {
 
+  //MO: note that the Breadth First Search Walker impelemts the IRandWalker
+  //structs methods. In our case, QLWalker, we need to just extend the
+  //BFSWalker and override some/all of its methods. Why? because we want to
+  //explore as much as possible breadth-first to collect stats at that depth for
+  //which rules and update the 2D matrix (Rule x Action counts)
   class BFSWalker : public IRandWalker {
     const Options& OPTIONS;
     id_t _start_id;

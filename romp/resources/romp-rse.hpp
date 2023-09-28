@@ -73,7 +73,9 @@ namespace romp
 
   // << ========================================================================================== >> 
   // <<                                         ROMP CODE                                          >> 
-  // << ========================================================================================== >> 
+  // << ========================================================================================== >>
+
+  //MO: This implements the main loop's single-step/iteration of the algorithm.
 
     // template<class S, class R>
   void Sim1Step(State states[], Rule rule, size_t state_count)
